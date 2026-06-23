@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 Gemini RAG 챗봇</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h2>🤖 My Gemini Chatbot</h2>
+            <span class="status-badge">무료 티어 대기 중</span>
+        </header>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="bubble">안녕하세요, 친구님! 무엇을 도와드릴까요? 원하시는 질문을 입력해 보세요.</div>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="Gemini에게 메시지 보내기..." autocomplete="off">
+            <button id="sendBtn">전송</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
