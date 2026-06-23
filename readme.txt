@@ -11,3 +11,4 @@ Gemini Chatbot 작성
 2단계: 프로젝트 디렉토리 구조
  - 프로젝트 폴더(my-chatbot-project) 안에 프론트엔드 정적 파일들을 모아둘 static 폴더를 만들고,
    그 안에 파일 3개를 생성해 주세요.    
+
