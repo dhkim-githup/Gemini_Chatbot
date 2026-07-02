@@ -7,14 +7,17 @@ Gemini Chatbot 작성
 1단계: 맛보기 (터미널에서 AI와 대화하기)
  - 번째 목표는 백엔드 서버를 띄우고, 
    우리가 보낸 질문을 LLM API(OpenAI 또는 Google Gemini)에 전달해 답을 받아오는 것까지입니다.
+  : 프로그램 실행 : python simple_chat.py
 
 2단계: 프로젝트 디렉토리 구조
  - 프로젝트 폴더(my-chatbot-project) 안에 프론트엔드 정적 파일들을 모아둘 static 폴더를 만들고,
-   그 안에 파일 3개를 생성해 주세요.    
+   그 안에 파일 3개를 생성해 주세요.  
+  : 웹 서버 구동 : index.html 클릭   
 
 3단계: FastAPI 백엔드 서버 구축
  - 이번 단계에서는 가볍고 비동기 처리에 강한 파이썬 웹 프레임워크인 FastAPI를 사용해 서버를 띄우고, 
   브라우저가 보낸 메시지를 실제 Gemini API로 전달해 답변을 받아오도록 코드를 합쳐보겠습니다.   
+  : 웹 서버 구동 : uvicorn main:app --reload
 
 4단계: RAG(Retrieval-Augmented Generation, 검색 증강 생성) 연결하기  
  - 문서 쪼개고 수치화하기 (Embedding): 가령 100페이지짜리 사내 매뉴얼이 있다면, 
@@ -23,3 +26,4 @@ Gemini Chatbot 작성
  - 조회해서 요약하기 (Retrieval & Generation): 사용자가 "인프라 장애 조치 방법 알려줘"라고 질문하면, 
    Vector DB 창고에서 가장 비슷한 내용의 문단만 쏙쏙 뽑아(Retrieval) 낸 뒤, 
    그 문단을 질문과 함께 제미나이에게 주면서 "이 문서를 참고해서 이쁘게 요약해서 답해줘(Generation)"라고 요청하는 것입니다.
+  : 웹 서버 구동 : uvicorn main:app --reload 
